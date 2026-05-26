@@ -27,7 +27,6 @@ module compliment (
   parameter integer N = 4;
   input [N-1:0] X;
   output reg [N-1:0] Y;
-  integer i;
 
-  always @(X) for (i = 0; i < N; i = i + 1) Y[i] = ~X[i];
+  always @(X) Y = 9 - X;
 endmodule
