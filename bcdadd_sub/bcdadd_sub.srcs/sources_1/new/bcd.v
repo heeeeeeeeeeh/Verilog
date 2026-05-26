@@ -8,19 +8,20 @@ module bcd (
   parameter integer N = 16;
   input [N-1:0] A, B;
   wire [N/4:0] C;
-  reg [N-1:0] Bmux, Bnot;
+  reg [N-1:0] Bmux;
+  wire [N-1:0] Bnot;
   input AddSub;
   output [N-1:0] D;
   output Cout;
   genvar i;
 
   assign C[0] = AddSub;
-  assign Cout = C[n/4];
+  assign Cout = C[N/4];
   generate
     for (i = 0; i < N; i = i + 4) begin : g_compliment
       compliment stage (
-          .X(B[i:i+3]),
-          .Y(Bnot[i:i+3])
+          .X(B[i+3-:4]),
+          .Y(Bnot[i+3-:4])
       );
     end
   endgenerate
