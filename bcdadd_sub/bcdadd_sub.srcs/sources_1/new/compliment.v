@@ -1,0 +1,33 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company:
+// Engineer:
+//
+// Create Date: 05/25/2026 08:58:10 PM
+// Design Name:
+// Module Name: compliment
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module compliment (
+    X,
+    Y
+);
+  parameter integer N = 4;
+  input [N-1:0] X;
+  output reg [N-1:0] Y;
+  integer i;
+
+  always @(X) for (i = 0; i < N; i = i + 1) Y[i] = ~X[i];
+endmodule

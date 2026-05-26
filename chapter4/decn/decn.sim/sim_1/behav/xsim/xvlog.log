@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/chapter4/decn/decn.srcs/sources_1/new/decn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decn
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/chapter4/decn/decn.srcs/sim_1/new/decn_tbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decn_tbl
