@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/bcdadd_sub/bcdadd_sub.srcs/sources_1/new/bcdadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcdadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/bcdadd_sub/bcdadd_sub.srcs/sources_1/new/bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/bcdadd_sub/bcdadd_sub.srcs/sources_1/new/compliment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compliment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/silve/Projects/vivado/bcdadd_sub/bcdadd_sub.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,4 @@
+Running: xsim.dir/compliment_behav/xsimk -simmode gui -wdb compliment_behav.wdb -simrunnum 0 -socket 51555
+Design successfully loaded
+Design Loading Memory Usage: 196860 KB (Peak: 196916 KB)
+Design Loading CPU Usage: 900 ms

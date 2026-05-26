@@ -10,9 +10,12 @@ module bcd (
   wire [N/4:0] C;
   reg [N-1:0] Bmux, Bnot;
   input AddSub;
-  output D, Cout;
+  output [N-1:0] D;
+  output Cout;
   genvar i;
 
+  assign C[0] = AddSub;
+  assign Cout = C[n/4];
   generate
     for (i = 0; i < N; i = i + 4) begin : g_compliment
       compliment stage (
@@ -27,9 +30,14 @@ module bcd (
     else Bmux = Bnot;
 
   generate
-    assign C[0] = AddSub;
     for (i = 0; i < N; i = i + 4) begin : g_bcdadd
-      bcdadd stage(A[i: i + 3], B[i:i + 3], C[i/4], D[i: i + 3], C[i/4+1]);
+      bcdadd stage (
+          A[i+3-:4],
+          Bmux[i+3-:4],
+          C[i/4],
+          D[i+3-:4],
+          C[i/4+1]
+      );
     end
   endgenerate
 endmodule
