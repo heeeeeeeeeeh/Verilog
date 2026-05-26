@@ -19,7 +19,7 @@ module bcd (
   assign Cout = C[N/4];
   generate
     for (i = 0; i < N; i = i + 4) begin : g_compliment
-      compliment stage (
+      complement stage (
           .X(B[i+3-:4]),
           .Y(Bnot[i+3-:4])
       );

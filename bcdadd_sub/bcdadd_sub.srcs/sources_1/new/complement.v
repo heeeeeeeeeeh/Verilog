@@ -5,7 +5,7 @@
 //
 // Create Date: 05/25/2026 08:58:10 PM
 // Design Name:
-// Module Name: compliment
+// Module Name: complement
 // Project Name:
 // Target Devices:
 // Tool Versions:
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module compliment (
+module complement (
     X,
     Y
 );
